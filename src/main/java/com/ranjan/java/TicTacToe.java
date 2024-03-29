@@ -75,6 +75,7 @@ public class TicTacToe {
 			row = in.nextInt();
 			System.out.print("Enter a column number (0, 1, or 2): ");
 			col = in.nextInt();
+			in.close();
             //Check if the row and col are 0, 1, or 2
 			if(row < 0 || col < 0 || row > 2 || col > 2) {
 				System.out.println("This position is off the bounds of the board! Try again.");

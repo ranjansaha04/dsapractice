@@ -54,6 +54,7 @@ public class GuessRightNumber {
     System.out.print("Enter a number between 0 to 100\n");
     if(userInput.hasNextInt()) {
         guess = userInput.nextInt(); 
+        userInput.close();
     }else {
         System.out.println("Enter a valid integer number between 0 and 100");
     }      
